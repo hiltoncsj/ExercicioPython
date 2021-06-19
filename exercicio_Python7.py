@@ -16,9 +16,10 @@ class Calculadora:
         return self.valor_a / self.valor_b
 
 #instanciar uma classe
-calculadora = Calculadora(5,3)
-print(calculadora.valor_a, calculadora.valor_b)
-print(calculadora.soma())
-print(calculadora.subtracao())
-print(calculadora.multiplicacao())
-print(calculadora.divisao())
+if __name__ == "__main__":
+    calculadora = Calculadora(5,3)
+    print(calculadora.valor_a, calculadora.valor_b)
+    print(calculadora.soma())
+    print(calculadora.subtracao())
+    print(calculadora.multiplicacao())
+    print(calculadora.divisao())

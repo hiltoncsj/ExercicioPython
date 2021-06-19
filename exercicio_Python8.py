@@ -18,9 +18,10 @@ class Calculadora:
         return valor_a % valor_b
 
 #instanciar uma classe
-calculadora = Calculadora()
-print("Soma: {}".format(calculadora.soma(5,3)))
-print("Subtração: {}".format(calculadora.subtracao(5,3)))
-print("Multiplicação: {}".format(calculadora.multiplicacao(5,3)))
-print("Divisão: {}".format(calculadora.divisao(5,3)))
-print("Resto: {}".format(calculadora.resto(5,3)))
+if __name__ == "__main__":
+    calculadora = Calculadora()
+    print("Soma: {}".format(calculadora.soma(5,3)))
+    print("Subtração: {}".format(calculadora.subtracao(5,3)))
+    print("Multiplicação: {}".format(calculadora.multiplicacao(5,3)))
+    print("Divisão: {}".format(calculadora.divisao(5,3)))
+    print("Resto: {}".format(calculadora.resto(5,3)))
