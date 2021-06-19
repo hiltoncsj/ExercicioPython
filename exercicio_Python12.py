@@ -1,10 +1,13 @@
+import shutil
+
 def escreverArquivo(texto):
-    arquivo = open("texto.txt","w")
+    arquivo = open("C:/DEV/Python/texto.txt","w")
     arquivo.write(texto)
     arquivo.close()
 
 def atualizarArquivo(texto):
-    arquivo = open("texto.txt","a")
+    diretorio = "C:/DEV/Python/texto.txt"
+    arquivo = open(diretorio,"a")
     arquivo.write(texto)
     arquivo.close()
 
@@ -13,5 +16,11 @@ def lerArquivo(nomeArquivo):
     texto = arquivo.read()
     print(texto)
 
+def copiaArquivo(nomeArquivo):
+    shutil.copy(nomeArquivo, "C:/DEV/Python/textos/")
+
+def moveArquivo(nomeArquivo):
+    shutil.move(nomeArquivo, "C:/DEV/Python/textos/")
+
 if __name__ == "__main__":
-    lerArquivo("texto.txt")
+    #moveArquivo("texto.txt")
