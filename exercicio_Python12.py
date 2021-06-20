@@ -1,12 +1,12 @@
 import shutil
 
 def escreverArquivo(texto):
-    arquivo = open("C:/DEV/Python/texto.txt","w")
+    arquivo = open("C:/DEV/Python/textos/texto.txt","w")
     arquivo.write(texto)
     arquivo.close()
 
 def atualizarArquivo(texto):
-    diretorio = "C:/DEV/Python/texto.txt"
+    diretorio = "C:/DEV/Python/textos/texto.txt"
     arquivo = open(diretorio,"a")
     arquivo.write(texto)
     arquivo.close()
